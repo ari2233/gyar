@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glownature</title>
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar bg-primary text-light p-2">
+        <section class="navbar-section">
+            <button class="btn btn-primary d-md-none" onclick="toggleMenu()">
+                <i class="icon icon-menu"></i>
+            </button>
+        </section>
+        <section class="navbar-center d-none d-md-flex">
+            <a href="#" class="btn btn-link text-light">Hem</a>
+            <a href="#" class="btn btn-link text-light">Produkter</a>
+            <a href="#" class="btn btn-link text-light">Om oss</a>
+            <a href="#" class="btn btn-link text-light">Kontakta oss</a>
+        </section>
+    </header>
+
+    <div class="container grid-lg mt-4">
+        <section class="text-center">
+            <h1 class="text-bold">Välkommen till Glownature</h1>
+            <p class="text-large">Din väg till strålande och frisk hud! Hos oss hittar du naturliga och effektiva hudvårdslösningar skräddarsydda för dina behov. Oavsett om du söker återfuktande krämer, renande ansiktsmasker eller skonsamma produkter för känslig hud, har vi allt du behöver för att känna dig säker i din hy. Utforska vårt sortiment och upptäck varför tusentals nöjda kunder litar på oss för sin hudvård. Börja din resa mot en strålande hud idag!</p>
+        </section>
+
+        <div class="columns mt-2">
+            <div class="column col-6 col-md-12">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="../bilder/squareimage2.png" alt="Ansiktsrengöring" class="img-responsive mx-auto" style="width:150px;height:150px;">
+                    </div>
+                    <div class="card-header">
+                        <div class="card-title h5">Upptäck vår bästsäljande ansiktsrengöring</div>
+                    </div>
+                    <div class="card-body">
+                        <p>För en ren och fräsch hy! Vår mjuka men effektiva rengöring tar bort smuts, olja och makeup utan att tärma på hudens naturliga barriär. Med ingredienser som aloe vera och grönt te lämnar den hyn ren, återfuktad och förnyad. Perfekt för alla hudtyper, inklusive känslig hud.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="column col-6 col-md-12">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="../bilder/squareimage1.png" alt="Återfuktande ansiktskräm" class="img-responsive mx-auto" style="width:150px;height:150px;">
+                    </div>
+                    <div class="card-header">
+                        <div class="card-title h5">Ge din hud det den längtar efter med vår intensivt återfuktande ansiktskräm!</div>
+                    </div>
+                    <div class="card-body">
+                        <p>Vår rika men icke-kletiga formel penetrerar djupt in i huden och lämnar den mjuk, smidig och strålande. Med ingredienser som hyaluronsyra och sheasmör är den perfekt för att bekämpa torrhet.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-2">
+            <a href="#" class="btn btn-lg btn-primary">Produkter</a>
+        </div>
+    </div>
+
+    <footer class="footer bg-primary text-light text-center p-2 mt-4">
+        <p>Följ oss på:</p>
+        <a href="https://facebook.com" target="_blank" class="text-light">Facebook</a> |
+        <a href="https://instagram.com" target="_blank" class="text-light">Instagram</a> |
+        <a href="https://twitter.com" target="_blank" class="text-light">Twitter</a>
+        <br>
+        <a href="#" class="text-light">Om oss</a> | 
+        <a href="#" class="text-light">Kontakta oss</a>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function toggleMenu() {
+            const links = document.querySelector('.navbar-center');
+            links.classList.toggle('d-none');
+        }
+    </script>
+</body>
+</html>

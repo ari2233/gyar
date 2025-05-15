@@ -1,0 +1,56 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.products-button {
+    background-color: #FFA500 !important; /* Override Spectre primary color */
+    border: none;
+    border-radius: 25px;
+    padding: 15px 30px;
+    margin: 20px auto;
+    display: block;
+    color: white !important;
+}
+
+.products-button:hover {
+    text-decoration: underline;
+}
+
+#nav-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+#nav-links li {
+    margin: 0 10px;
+}
+
+/* Responsiv design för hamburgermenyn */
+@media (max-width: 768px) {
+    #nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        background-color: white; /* Lägg till bakgrundsfärg för mobilmenyn */
+    }
+    #nav-links.show {
+        display: flex;
+    }
+}
+
+/* Anpassning för footern */
+.bg-primary {
+    background-color: #FFA500 !important; /* Override Spectre primary color */
+}
+
+.text-light {
+    color: white !important; /* Override Spectre light color */
+}
+
+.social-media a {
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+}

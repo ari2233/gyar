@@ -1,0 +1,68 @@
+/* Anpassad CSS för Glownature med Spectre.css */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    background-color: #ffffff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+.text-large {
+    font-size: 20px;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.card-body p {
+    font-size: 16px;
+}
+
+.btn-primary {
+    background-color: #FFA500;
+    border-color: #FFA500;
+    color: white;
+}
+
+.btn-primary:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    background-color: #FFA500;
+    color: white;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-center {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .columns {
+        flex-direction: column;
+    }
+
+    .column {
+        width: 100%;
+    }
+}
